@@ -1,5 +1,6 @@
 package apps.sinterklas.punteunbandung;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -27,14 +28,13 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_user_register);
         getSupportActionBar().setTitle("Register Activity");
 
-        Register_btn = (Button)findViewById(R.id.btn_regist);
+        Register_btn = (Button) findViewById(R.id.btn_regist);
         Username = (EditText) findViewById(R.id.username_register);
         E_mail = (EditText) findViewById(R.id.email_register);
         Password = (EditText) findViewById(R.id.password_register);
         ConfirmPass = (EditText) findViewById(R.id.confirm_password);
 
         firebaseAuth = FirebaseAuth.getInstance();
-
         FirebaseApp.initializeApp(RegisterActivity.this);
 
         Register_btn.setOnClickListener(new View.OnClickListener() {
@@ -74,16 +74,13 @@ public class RegisterActivity extends AppCompatActivity {
                             .addOnCompleteListener(RegisterActivity.this, new OnCompleteListener<AuthResult>() {
                                 @Override
                                 public void onComplete(@NonNull Task<AuthResult> task) {
-                                    if (task.isSuccessful()) {
+                                    if(task.isSuccessful()) {
 
                                         startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                                         Toast.makeText(RegisterActivity.this, "Registration Complete", Toast.LENGTH_SHORT).show();
-
-                                    } else {
-
+                                    }else{
                                         Toast.makeText(RegisterActivity.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
                                     }
-
                                 }
                             });
                 }

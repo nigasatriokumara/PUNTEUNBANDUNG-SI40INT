@@ -17,78 +17,77 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class AdminLoginActivity extends AppCompatActivity {
-    private EditText username, email, password;
-    private Button Login, Register;
-    private FirebaseAuth firebaseAuth;
+  private EditText username, email, password;
+  private Button Login, Register;
+  private FirebaseAuth firebaseAuth;
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_login);
-        getSupportActionBar().setTitle("Admin Login Form");
+  @Override
+  protected void onCreate(Bundle savedInstanceState)  {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_admin_login);
+    getSupportActionBar().setTitle("Admin Login Form");
 
-        Register = (Button)findViewById(R.id.button4);
-        Register.setOnClickListener(new View.OnClickListener() {
+    Register =(Button)findViewById(R.id.button4);
+    Register.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Intent i = new Intent(getApplicationContext(), AdminRegisterActivity.class);
+        startActivity(i);
+      }
+    });
 
-            @Override
-            public void onClick(View argo) {
-                Intent i = new Intent(getApplicationContext(), AdminRegisterActivity.class);
-                startActivity(i);
-            }
-        });
+    username = (EditText)findViewById(R.id.Username);
+    email = (EditText)findViewById(R.id.editText);
+    password = (EditText)findViewById(R.id.Password);
+    Login = (Button)findViewById(R.id.button3);
 
-        username = (EditText) findViewById(R.id.Username);
-        email = (EditText) findViewById(R.id.editText);
-        password = (EditText) findViewById(R.id.Password);
-        Login = (Button) findViewById(R.id.button3);
+    firebaseAuth = FirebaseAuth.getInstance();
+    FirebaseApp.initializeApp(AdminLoginActivity.this);
 
-        firebaseAuth = FirebaseAuth.getInstance();
-        FirebaseApp.initializeApp(AdminLoginActivity.this);
+    Login.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
 
-        Login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
+        String user = username.getText().toString().trim();
+        String e_mail = email.getText().toString().trim();
+        String pass = password.getText().toString().trim();
 
-                String user = username.getText().toString().trim();
-                String e_mail = email.getText().toString().trim();
-                String pass = password.getText().toString().trim();
+        if (TextUtils.isEmpty(user)) {
+          Toast.makeText(AdminLoginActivity.this, "Enter Your Username", Toast.LENGTH_SHORT).show();
+          return;
+        }
+        if (TextUtils.isEmpty(e_mail)) {
+          Toast.makeText(AdminLoginActivity.this, "Enter Your Email", Toast.LENGTH_SHORT).show();
+          return;
+        }
+        if (TextUtils.isEmpty(pass)) {
+          Toast.makeText(AdminLoginActivity.this, "Enter Your Password", Toast.LENGTH_SHORT).show();
+          return;
+        }
+        if (user.length() < 8) {
+          Toast.makeText(AdminLoginActivity.this, "Username is Too Short", Toast.LENGTH_SHORT).show();
+        }
+        if (email.length() < 10) {
+          Toast.makeText(AdminLoginActivity.this, "Email is Too Short", Toast.LENGTH_SHORT).show();
+        }
+        if (pass.length() < 6) {
+          Toast.makeText(AdminLoginActivity.this, "Password is Too Short", Toast.LENGTH_SHORT).show();
+        }
+        firebaseAuth.signInWithEmailAndPassword(e_mail, pass)
+                .addOnCompleteListener(AdminLoginActivity.this, new OnCompleteListener<AuthResult>() {
+                  @Override
+                  public void onComplete(@NonNull Task<AuthResult> task) {
+                    if(task.isSuccessful()) {
 
-                if (TextUtils.isEmpty(user)) {
-                    Toast.makeText(AdminLoginActivity.this, "Enter Your Username", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(e_mail)) {
-                    Toast.makeText(AdminLoginActivity.this, "Enter Your Email", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (TextUtils.isEmpty(pass)) {
-                    Toast.makeText(AdminLoginActivity.this, "Enter Your Password", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-                if (user.length() < 8) {
-                    Toast.makeText(AdminLoginActivity.this, "Username is Too Short", Toast.LENGTH_SHORT).show();
-                }
-                if (email.length() < 10) {
-                    Toast.makeText(AdminLoginActivity.this, "Email is Too Short", Toast.LENGTH_SHORT).show();
-                }
-                if (pass.length() < 6) {
-                    Toast.makeText(AdminLoginActivity.this, "Password is Too Short", Toast.LENGTH_SHORT).show();
-                }
-                firebaseAuth.signInWithEmailAndPassword(e_mail, pass)
-                        .addOnCompleteListener(AdminLoginActivity.this, new OnCompleteListener<AuthResult>() {
-                            @Override
-                            public void onComplete(@NonNull Task<AuthResult> task) {
-                                if (task.isSuccessful()) {
+                      startActivity(new Intent(getApplicationContext(),MainMenu.class));
 
-                                    startActivity(new Intent(getApplicationContext(), MainMenu.class));
+                    }else{
 
-                                } else {
-
-                                    Toast.makeText(AdminLoginActivity.this, "Login Failed or User not Available", Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
-            }
-        });
-    }
+                      Toast.makeText(AdminLoginActivity.this, "Login Failed or User not Available", Toast.LENGTH_SHORT).show();
+                    }
+                  }
+                });
+      }
+    });
+  }
 }
