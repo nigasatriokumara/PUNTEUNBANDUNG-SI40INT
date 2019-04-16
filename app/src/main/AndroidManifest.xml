@@ -15,7 +15,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+<<<<<<< HEAD
         android:theme="@style/AppTheme">
+=======
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
         <activity android:name=".RegisterActivity">
         </activity>
         <activity
@@ -40,9 +45,12 @@
         </activity>
         <activity android:name=".PlaceActivity">
         </activity>
+<<<<<<< HEAD
         <activity
             android:name=".SettingsActivity"
             android:label="@string/title_activity_settings" />
+=======
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
     </application>
 
 </manifest>
