@@ -5,7 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="#fdfd5c">
+=======
+    android:background="#ff531a">
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
 
 
     <ImageView
@@ -126,7 +130,11 @@
         tools:ignore="HardcodedText" />
 
     <Button
+<<<<<<< HEAD
         android:id="@+id/button8"
+=======
+        android:id="@+id/button"
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
         android:layout_width="145dp"
         android:layout_height="47dp"
         android:layout_marginStart="8dp"
@@ -135,7 +143,11 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+<<<<<<< HEAD
         android:background="#ffb449"
+=======
+        android:background="#e63900"
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
         android:text="MANGGA REGISTER"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
