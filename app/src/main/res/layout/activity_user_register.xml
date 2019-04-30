@@ -5,7 +5,11 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical"
+<<<<<<< HEAD
         android:background="#87cefa">
+=======
+        android:background="#BBDEFB">
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
 
 
     <TextView
@@ -57,7 +61,10 @@
 
     <Button
         android:id="@+id/btn_regist"
+<<<<<<< HEAD
         android:background="@drawable/round"
+=======
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
         android:layout_width="200dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"

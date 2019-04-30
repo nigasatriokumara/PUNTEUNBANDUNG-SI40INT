@@ -4,14 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    tools:context="apps.sinterklas.punteunbandung.Event">
-=======
-    tools:context="apps.sinterklas.punteunbandung.EventActivity">
->>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
+    tools:context="apps.sinterklas.punteunbandung.PlaceActivity">
 
     <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager"
+        android:id="@+id/viewpager2"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
