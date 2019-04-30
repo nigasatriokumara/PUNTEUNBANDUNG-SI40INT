@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87cefa"
+    android:orientation="vertical">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/round3"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/itemimg3"
+            android:layout_width="129dp"
+            android:layout_height="175dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemnama"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Nama"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/itemimg3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemdestinasi"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="Destinasi"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/itemimg3"
+            app:layout_constraintTop_toBottomOf="@+id/itemnama" />
+
+        <TextView
+            android:id="@+id/itemnotelp"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="No Telp"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/itemimg3"
+            app:layout_constraintTop_toBottomOf="@+id/itemdestinasi" />
+
+        <TextView
+            android:id="@+id/itembahasa"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="Bahasa"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/itemimg3"
+            app:layout_constraintTop_toBottomOf="@+id/itemnotelp" />
+
+        <TextView
+            android:id="@+id/itememail"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+            android:textSize="17sp"
+            app:layout_constraintStart_toEndOf="@+id/itemimg3"
+            app:layout_constraintTop_toBottomOf="@+id/itembahasa" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+
+</RelativeLayout>

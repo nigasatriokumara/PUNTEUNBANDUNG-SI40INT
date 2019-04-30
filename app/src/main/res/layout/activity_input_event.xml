@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fdfd5c"
+    tools:context="apps.sinterklas.punteunbandung.InputEventActivity">
+
+
+    <ImageView
+        android:id="@+id/slideimg6"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/placee" />
+
+    <Button
+        android:id="@+id/pilihFotoEvent"
+        android:background="@drawable/round2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Choose Image" />
+
+    <EditText
+        android:id="@+id/editTitleEvent"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="input title Here"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editDeskripsiEvent"
+        android:layout_width="300dp"
+        android:layout_height="144dp"
+        android:ems="10"
+        android:hint="Input Description Here"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/inputEvent"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round2"
+        android:text="Add Event" />
+</LinearLayout>
