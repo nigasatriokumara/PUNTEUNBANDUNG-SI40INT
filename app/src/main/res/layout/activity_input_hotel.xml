@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fdfd5c"
+    tools:context="apps.sinterklas.punteunbandung.InputHotelActivity">
+
+
+    <ImageView
+        android:id="@+id/slideimg7"
+        android:layout_width="328dp"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/pilihFotoHotel"
+        android:layout_width="150dp"
+        android:background="@drawable/round2"
+        android:layout_height="wrap_content"
+        android:text="Choose Image" />
+
+    <TextView
+        android:id="@+id/editTitleHotel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="hotel name"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/editLocationHotel"
+        android:layout_width="300dp"
+        android:layout_height="144dp"
+        android:ems="10"
+        android:hint="Location"
+        android:padding="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/btn_place"
+        android:layout_width="150dp"
+        android:background="@drawable/round2"
+        android:layout_height="wrap_content"
+        android:text="Pilih lokasi" />
+
+    <Button
+        android:id="@+id/inputHotel"
+        android:layout_width="150dp"
+        android:background="@drawable/round2"
+        android:layout_height="wrap_content"
+        android:text="Add Hotel" />
+</LinearLayout>
