@@ -27,7 +27,11 @@ public class AdminLoginActivity extends AppCompatActivity {
     setContentView(R.layout.activity_admin_login);
     getSupportActionBar().setTitle("Admin Login Form");
 
+<<<<<<< HEAD
     Register =(Button)findViewById(R.id.button7);
+=======
+    Register =(Button)findViewById(R.id.button4);
+>>>>>>> 3459b6717b05c8604778b37426525fa2eb531bc8
     Register.setOnClickListener(new View.OnClickListener() {
       @Override
       public void onClick(View view) {
@@ -79,7 +83,11 @@ public class AdminLoginActivity extends AppCompatActivity {
                   public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()) {
 
+<<<<<<< HEAD
                       startActivity(new Intent(getApplicationContext(),MainMenuAdmin.class));
+=======
+                      startActivity(new Intent(getApplicationContext(),MainMenu.class));
+>>>>>>> 3459b6717b05c8604778b37426525fa2eb531bc8
 
                     }else{
 
