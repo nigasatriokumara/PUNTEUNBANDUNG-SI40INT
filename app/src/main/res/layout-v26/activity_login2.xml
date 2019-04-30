@@ -113,7 +113,11 @@
 
     <Button
         android:id="@+id/email_sign_in_button"
+<<<<<<< HEAD
         android:background="@drawable/round"
+=======
+        style="?android:textAppearanceSmall"
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -130,10 +134,15 @@
 
     <Button
         android:id="@+id/email_register_button"
+<<<<<<< HEAD
+=======
+        style="?android:textAppearanceSmall"
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+<<<<<<< HEAD
         android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
@@ -141,12 +150,24 @@
         android:text="Register"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+=======
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Register"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.591"
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_sign_in_button"
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <Button
         android:id="@+id/admin_login_button"
+<<<<<<< HEAD
+=======
+        style="?android:textAppearanceSmall"
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -154,14 +175,21 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+<<<<<<< HEAD
         android:background="@drawable/round"
+=======
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
         android:text="Login as admin"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/email_register_button"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.159"
+=======
+        app:layout_constraintVertical_bias="0.0"
+>>>>>>> 18d0727a885fa49ee824c195f0ad0aaa28cbd429
         tools:ignore="HardcodedText,MissingConstraints" />
 
     <CheckBox
