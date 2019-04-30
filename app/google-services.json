@@ -8,6 +8,7 @@
   "client": [
     {
       "client_info": {
+<<<<<<< HEAD
         "mobilesdk_app_id": "1:320765914621:android:5a54c9aa4f97028f",
         "android_client_info": {
           "package_name": "android.example.com.punteunbandungfinal"
@@ -45,6 +46,8 @@
     },
     {
       "client_info": {
+=======
+>>>>>>> 40a2b3c8886ede9242e4893cc9e2d455bc402e00
         "mobilesdk_app_id": "1:320765914621:android:16e746f33e848fa9",
         "android_client_info": {
           "package_name": "apps.sinterklas.punteunbandung"
@@ -60,6 +63,7 @@
           }
         },
         {
+<<<<<<< HEAD
           "client_id": "320765914621-qlmg7oml5og85p6ph7rbn90iutmrkgkk.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -70,6 +74,22 @@
         {
           "client_id": "320765914621-ar71if0jn510ag2fdn0u9vtbv5ua4ti0.apps.googleusercontent.com",
           "client_type": 3
+=======
+          "client_id": "320765914621-ae2i9b3sqcft019if7p0i419u9ido9ev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apps.sinterklas.punteunbandung",
+            "certificate_hash": "cc50e3fd1565ddf46a7331b00e38f4708869dce7"
+          }
+        },
+        {
+          "client_id": "320765914621-t3v77dld3ar4k8chlio56dm0r0u0n4ns.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "apps.sinterklas.punteunbandung",
+            "certificate_hash": "81f309a97296b701cf71302cebcb00d8b8d417c3"
+          }
+>>>>>>> 40a2b3c8886ede9242e4893cc9e2d455bc402e00
         }
       ],
       "api_key": [

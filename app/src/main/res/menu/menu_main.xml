@@ -8,8 +8,11 @@
         android:orderInCategory="100"
         android:title="@string/action_settings"
         app:showAsAction="never" />
+<<<<<<< HEAD
 
     <item
         android:id="@+id/menuLogout"
         android:title="Logout"/>
+=======
+>>>>>>> 40a2b3c8886ede9242e4893cc9e2d455bc402e00
 </menu>
